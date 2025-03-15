@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center-box">
+    <div class="weather-container">
+      <div class="weather-left">
+        <div class="temperature">
+          <h1 id="currentTemp"></h1>
+          <h2 id="location"></h2>
+          <p id="time"></p>
+        </div>
+      </div>
+      <div class="weather-right">
+        <div class="condition">
+          <h3>Live Weather Updates</h3>
+          <div class="details">
+            <div class="lists"><div>🌡️</div><p>Feels like: </p><strong id="feelsLike"></strong></div>
+            <div class="lists"><div>🌧️</div><p>Precipitation: </p><strong id="precip"></strong></div>
+            <div class="lists"><div>💧</div><p>Humidity: </p><strong id="humidity"></strong></div>
+            <div class="lists"><div>💨</div><p>Wind: </p><strong id="wind"></strong></div>
+            <div class="lists"><div>☁️</div><p>Cloud cover: </p><strong id="cloud"></strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
