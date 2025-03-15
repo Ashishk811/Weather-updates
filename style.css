@@ -24,17 +24,34 @@ body {
   height: 100vh;
 }
 
+.weather-box{
+  width: 100%;
+  max-width: 750px;
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
 .weather-container {
   display: flex;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+  /* background: rgba(0, 0, 0, 0.7); Dark background with transparency */
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
   width: 100%;
-  max-width: 750px;
-  backdrop-filter: blur(10px); /* Blur effect */
+  height: 100%;
+  /* max-width: 750px; */
+
+
+  background-size: cover;
+  background-position: center;
+
+  backdrop-filter: blur(2px) brightness(50%) contrast(100%);
+  
 }
+
 
 .weather-left {
   display: flex;
@@ -73,7 +90,7 @@ body {
 
 .condition h3 {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 550;
   margin-bottom: 1rem;
   color: #ffcc80; /* Softer yellow for weather condition */
 }
@@ -107,10 +124,14 @@ body {
 
 
 @media (max-width: 450px) {
+  .weather-box{
+    width: 90%;
+  }
+
   .weather-container {
     flex-direction: column;
     text-align: center;
-    width: 90%;
+    width: 100%;
   }
 
   .weather-left {
